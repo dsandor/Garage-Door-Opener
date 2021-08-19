@@ -83,7 +83,7 @@ const App: () => Node = () => {
           <View style={styles.buttonContainer}>
             <TouchableOpacity onPress={toggleDoor} style={styles.roundButton}>
               <Image
-                source={require('./images/garage-open.png')}
+                source={isOpen ? require('./images/garage-open.png') : require('./images/garage-closed.png')}
                 style={styles.imageButton}
               />
             </TouchableOpacity>
